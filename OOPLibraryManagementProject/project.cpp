@@ -153,7 +153,7 @@ class DVD : public Data
     }
 };
 
-class LibrarySystem :public Book , public Magazine , public DVD
+class LibrarySystem 
 {
     private:
     Book* books[100];
@@ -478,9 +478,9 @@ class LibrarySystem :public Book , public Magazine , public DVD
 int main(){
     int n=1;
     LibrarySystem ob;
+    cout<<"-----------------------------------------"<<endl;
+    cout<<"Welcome to the Library Management System"<<endl;
     while(n){
-        cout<<"-----------------------------------------"<<endl;
-        cout<<"Welcome to the Library Management System"<<endl;
         cout<<"-----------------------------------------"<<endl;
         cout<<"1. Add Book"<<endl;
         cout<<"2. Add Magazine"<<endl;
